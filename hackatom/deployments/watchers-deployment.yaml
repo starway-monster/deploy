@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: cosmoshub-4
-        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:172f69b6
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:c93fa940
         env:
           - name: rpc
             value: "http://23.90.70.41:26657"
@@ -46,7 +46,7 @@ spec:
             cpu: "100m"
 
       - name: bostromdev-1
-        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:1aa18a09
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:c93fa940
         env:
           - name: rpc
             value: "http://167.172.103.118:26657"
@@ -70,7 +70,7 @@ spec:
             cpu: "100m"
 
       - name: regen-devnet-5
-        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:1aa18a09
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:c93fa940
         env:
           - name: rpc
             value: "http://18.220.101.192:26657"
@@ -94,7 +94,7 @@ spec:
             cpu: "100m"
 
       - name: musselnet-3
-        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:1aa18a09
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:c93fa940
         env:
           - name: rpc
             value: "http://188.34.187.55:26657"
@@ -118,7 +118,7 @@ spec:
             cpu: "100m"
 
       - name: musselnet-4
-        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:1aa18a09
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:c93fa940
         env:
           - name: rpc
             value: "http://157.90.153.184:26657"
