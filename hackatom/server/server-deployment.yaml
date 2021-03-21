@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: starway-server-deploy
+  labels:
+    app: starway-server-app
+  annotations:
+spec:
+  selector:
+    matchLabels:
+      app: starway-server-app
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: starway-server-app
+    spec:
+      containers:
+      - name: starway-server
+        image: registry.digitalocean.com/mapofzones/hackatom-starway-server:4e012395
+        env:
+          - name: APP_PORT
+            value: "8085"
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "30Mi"
+            cpu: "20m"
+          limits:
+            memory: "256Mi"
+            cpu: "150m"
+        ports:
+        - containerPort: 8085
+          protocol: TCP
