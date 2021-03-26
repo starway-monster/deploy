@@ -236,3 +236,315 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
+
+      - name: tanute-1
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.173:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: xasonk-3
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.174:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: erieri
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.175:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: lalbri-1
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.176:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: fadeld
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.177:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: fontor-1
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.178:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: yacafi-6
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.179:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: chelll
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.180:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: hobhin-1
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.181:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: ftandy-2
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.182:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: eyarss-1
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.183:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: wnncku
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.184:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
+
+      - name: brenav-1
+        image: registry.digitalocean.com/mapofzones/hackatom-cosmos-watcher:efak95b0
+        env:
+          - name: rpc
+            value: "http://34.80.202.185:26657"
+          - name: rabbitmq
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: watcher_rabbitmq
+          - name: graphql
+            valueFrom:
+              secretKeyRef:
+                name: hackatomsecret
+                key: db_graphql
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "1Mi"
+            cpu: "1m"
+          limits:
+            memory: "1Mi"
+            cpu: "1m"
